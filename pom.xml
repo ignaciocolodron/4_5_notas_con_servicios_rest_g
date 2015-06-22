@@ -67,7 +67,7 @@
 	        </activation>
 	        <properties>  
 	            <!-- env>des</env-->
-	            <url_rest_service>http://localhost:80/4_5_notas_con_rest_services</url_rest_service>
+	            <url_rest_service>https://localhost</url_rest_service>
 	        </properties>  
     	</profile> 
     </profiles>
