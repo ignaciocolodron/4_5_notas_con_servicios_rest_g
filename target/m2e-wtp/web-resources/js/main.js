@@ -27,7 +27,7 @@ function addNote(){
 
 		//Aquí se va a llamar al servicio rest addNota
 		$.ajax({
-			url: "http://localhost:8080/4_5_notas_con_rest_services/rest/xml/nota/addNota/descripcion/" + nueva_nota,
+			url: "http://localhost:80/4_5_notas_con_rest_services/rest/xml/nota/addNota/descripcion/" + nueva_nota,
 			type: "GET",
 			dataType: "json",
 			success: function( data ){
@@ -67,7 +67,7 @@ function showNotes(){
 
 	//Aquí se va a llamar al servicio rest getAllNotas
 	$.ajax({
-		url: "http://localhost:8080/4_5_notas_con_rest_services/4_5_notas_con_rest_services/rest/xml/nota/getAllNotas",
+		url: "http://localhost:80/4_5_notas_con_rest_services/4_5_notas_con_rest_services/rest/xml/nota/getAllNotas",
 		type: "GET",
 		dataType: "json",
 		success: function( data ){
@@ -107,7 +107,7 @@ function removeNote(idNoteToRemove){
 
 	//Aquí se va a llamar al servicio rest getAllNotas
 	$.ajax({
-		url: "http://localhost:8080/4_5_notas_con_rest_services/4_5_notas_con_rest_services/" + 
+		url: "http://localhost:80/4_5_notas_con_rest_services/4_5_notas_con_rest_services/" + 
 			"rest/xml/nota/deleteNota/id/" + idNoteToRemove,
 		type: "GET",
 		dataType: "json",
@@ -128,7 +128,7 @@ function editNote(id, noteToEdit){
 
 	//Aquí se va a llamar al servicio rest updateNota
 	$.ajax({
-		url: "http://localhost:8080/4_5_notas_con_rest_services/4_5_notas_con_rest_services/" + 
+		url: "http://localhost:80/4_5_notas_con_rest_services/4_5_notas_con_rest_services/" + 
 			"rest/xml/nota/updateNota/id/" + id +
 			"/descripcion/" + editedNote,
 		type: "GET",

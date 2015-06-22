@@ -47,9 +47,7 @@
 
       	<profile>  
 	        <id>desarrollo</id>  
-	        <activation>
-	            <activeByDefault>true</activeByDefault>
-	        </activation>
+	        
 	        <properties>  
 	            <!-- env>des</env-->
 	            <url_rest_service>http://localhost:8080/4_5_notas_con_rest_services</url_rest_service>
@@ -62,6 +60,16 @@
 	            <url_rest_service>http://192.168.0.250:80/4_5_notas_con_rest_services</url_rest_service>
 	        </properties>  
     	</profile>  
+    	<profile>  
+	        <id>heroku</id>  
+	        <activation>
+	            <activeByDefault>true</activeByDefault>
+	        </activation>
+	        <properties>  
+	            <!-- env>des</env-->
+	            <url_rest_service>http://localhost:80/4_5_notas_con_rest_services</url_rest_service>
+	        </properties>  
+    	</profile> 
     </profiles>
     
 	<build>
