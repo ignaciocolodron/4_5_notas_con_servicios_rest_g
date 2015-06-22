@@ -1,0 +1,48 @@
+body{
+	margin: 0px;
+}
+
+#controls{
+	background-color: gray;
+  	height: 50px;
+}
+
+.input_note{
+	margin: 1em;
+	border-radius: 8px;
+	padding-left: 1em;
+	width: 40%;
+	min-width: 150px;
+}
+
+.button{
+	border-radius: 8px;
+	background-color: blue;
+	color: white;
+	border: darkblue solid 1px;
+	font-weight: bold;
+	height: 25px;
+	width: 100px;
+}
+
+
+article{
+	background-color: #FF0;
+	padding: 1.2em;
+	border: 2px solid #9ACD32;
+	margin: 1em;
+	max-width: 1000px;
+}
+
+.icons{
+	float: right;
+}
+
+.icon_enlace{
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+.icon{	
+	height: 16px;
+}
